@@ -1,1 +1,1 @@
-web: gunicorn app:recipe_app
+web: gunicorn app:bens-recipes-app
