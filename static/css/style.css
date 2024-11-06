@@ -1,0 +1,125 @@
+body {
+  background-color: #333333; /* Dark Grey */
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: #b34a00; /* Burnt Orange */
+  color: #333333; /* Dark Grey */
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333333; /* Dark Grey */
+  text-shadow: 2px 2px #b34a00; /* Burnt Orange */
+}
+
+form {
+  padding: 20px;
+  background-color: #444444; /* Dark Grey */
+  border: 1px solid #b34a00; /* Burnt Orange */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #b34a00; /* Burnt Orange */
+  background-color: #444444; /* Dark Grey */
+  color: #b34a00; /* Burnt Orange */
+}
+
+button[type="submit"] {
+  background-color: #b34a00; /* Burnt Orange */
+  color: #333333; /* Dark Grey */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #444444; /* Dark Grey */
+  padding: 20px;
+  border: 1px solid #b34a00; /* Burnt Orange */
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #b34a00; /* Burnt Orange */
+}
+
+img {
+  width: 250px; /* Square image */
+  height: 250px; /* Square image */
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #b34a00; /* Burnt Orange */
+}
+
+a {
+  color: #b34a00; /* Burnt Orange */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffcc00; /* Lighter Burnt Orange */
+}
+
+/* Recipe Details */
+.recipe-details {
+  background-color: #444444; /* Dark Grey */
+  padding: 20px;
+  border: 1px solid #b34a00; /* Burnt Orange */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.ingredient-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredient-list li {
+  margin-bottom: 10px;
+}
+
+.instructions {
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.back-button {
+  background-color: #b34a00; /* Burnt Orange */
+  color: #333333; /* Dark Grey */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #ffcc00; /* Lighter Burnt Orange */
+}

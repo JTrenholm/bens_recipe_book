@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ recipe.name }}</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>{{ recipe.name }}</h1>
+    </header>
+
+    <!-- Recipe Details -->
+    <div class="recipe-details">
+      <img src="{{ recipe.image }}" alt="Recipe Image" />
+      <h2>Ingredients:</h2>
+      <ul class="ingredient-list">
+        {% for ingredient in recipe.extendedIngredients %}
+        <li>{{ ingredient.original }}</li>
+        {% endfor %}
+      </ul>
+      <h2>Instructions:</h2>
+      <p class="instructions">{{ recipe.instructions | safe }}</p>
+    </div>
+
+    <!-- Back Button -->
+    <a href="{{ url_for('index') }}" class="back-button">Back to Search</a>
+  </body>
+</html>

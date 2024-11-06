@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ben's Personal Recipe Book</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Ben's Personal Recipe Book</h1>
+    </header>
+
+    <!-- Search Form -->
+    <form action="/search" method="get">
+      <input type="text" name="query" placeholder="Search recipes..." />
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Recipe List -->
+    <ul>
+      {% for recipe in recipes %}
+      <li>
+        <h2>{{ recipe.title }}</h2>
+        <img src="{{ recipe.image }}" alt="Recipe Image" />
+        <p>{{ recipe.summary }}</p>
+        <a href="/recipe/{{ recipe.id }}">View Recipe</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
